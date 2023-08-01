@@ -46,3 +46,55 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+
+:root {
+	--cor-de-fundo: #F0F5F9;
+	--cor-primeira-fonte: #393E46;
+	--cor-segunda-fonte: #1E2022;
+	--cor-terceira-fonte: #52616B;
+	--cor-detalhes: #00ADB5;
+
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 1.8rem;
+	line-height: 1.4;
+	color: var(--cor-primeira-fonte);
+	background-color: var(--cor-de-fundo);
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	position: fixed;
+}
+
+.menu-navegacao ul {
+	display: flex;
+	flex-direction: row;
+}
+
+.welcome-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+}
+
+h1 {
+	font-size: 6rem;
+	color: var(--cor-segunda-fonte);
+	font-weight: 700;
+}
