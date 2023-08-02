@@ -213,11 +213,11 @@ h2 {
 }
 
 .stack-card {
-	box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 7px 20px rgba(0, 0, 0, 0.2);
 	border-radius: 1rem;
 	width: 50%;
-	max-width: 250px;
-	height: 50px;
+	max-width: 25rem;
+	height: 6rem;
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
@@ -229,10 +229,11 @@ h2 {
 
 .stack-card:hover {
 	transform: translate(0px, -10px);
+	box-shadow: 0 7px 20px rgba(0, 0, 0, 0.5);
 }
 
 .icon-stack {
-	font-size: 2.5rem;
+	font-size: 3rem;
 }
 
 .stack-name {
