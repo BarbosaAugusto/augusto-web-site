@@ -89,7 +89,7 @@ header {
 	align-items: center;
 	background-color: var(--cor-de-fundo-header);
 	backdrop-filter: blur(8px);
-
+	z-index: 1;
 }
 
 .header-img {
@@ -243,7 +243,6 @@ h2 {
 
 .projects {
 	width: 100%;
-	height: 100vh;
 	padding: 10rem 2rem; 
 	display: flex;
 	flex-direction: column;
@@ -254,21 +253,102 @@ h2 {
 .projetos-grid {
 	width: 100%;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 5rem;
+	margin-top: 5rem;
 }
 
 .card-projeto {
-	width: 35rem;
-	height: 35rem;
+	width: 40rem;
+	height: 40rem;
 	box-shadow: 0 7px 20px rgba(0, 0, 0, 0.2);
 	border-radius: 1rem;
+	transition: all 0.3s ease;
+	background-color: #FFF;
+}
 
+.card-projeto:hover {
+	transform: translate(0px, -10px);
+	box-shadow: 0 7px 20px rgba(0, 0, 0, 0.5);
 }
 
 .imagem-projeto {
 	width: 100%;
-	max-width: 35rem;
+	max-width: 40rem;
 	height: 25rem;
 	object-fit: cover;
-	border
+	border-radius: 1rem 1rem 0 0;
+}
+
+.projeto-nome {
+	font-size: 2rem;
+	color: var(--cor-segunda-fonte);
+	font-weight: 700;
+	text-align: left;
+	padding-left: 2rem;
+}
+
+.projeto-detalhe {
+	font-size: 1.6rem;
+	text-align: left;
+	font-weight: 400;
+	color: var(--cor-terceira-fonte);
+	padding: 0 2rem;
+}
+
+.projeto-tecnologias {
+	display: flex;
+	gap: 20px;
+	padding: 1rem 2rem;
+}
+
+.projeto-tecnologia {
+	font-size: 1.4rem;
+	background-color: var(--cor-de-fundo-header);
+	border-radius: 0.5rem;
+	padding: 0.25rem;
+	color: var(--cor-terceira-fonte)
+}
+
+.contato {
+	width: 100%;
+	height: 80vh;
+	padding: 5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.links-contato {
+	display: flex;
+	gap: 3rem;
+	margin-top: 4rem;
+}
+
+.link-contato {
+	font-size: 2rem;
+	transition: all 0.3s ease;
+}
+
+.link-contato:hover {
+	transform: translate(0, 1rem);
+}
+
+.link-contato span {
+	color: var(--cor-terceira-fonte);
+	padding-left: 0.5rem;
+}
+
+.footer {
+	width: 100%;
+	height: 2rem;
+	text-align: center;
+}
+
+.footer p {
+	font-size: 1.6rem;
+	color: var(--cor-terceira-fonte)
 }
