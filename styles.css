@@ -225,6 +225,7 @@ h2 {
 	gap: 20px;
 	padding-left: 20px;
 	transition: all 0.3s ease;
+	background-color: #FFF;
 }
 
 .stack-card:hover {
@@ -281,7 +282,7 @@ h2 {
 	border-radius: 1rem 1rem 0 0;
 }
 
-.projeto-nome {
+.project-tile {
 	font-size: 2rem;
 	color: var(--cor-segunda-fonte);
 	font-weight: 700;
